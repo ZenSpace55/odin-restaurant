@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("hey what's up!??!?"),console.log("made it to loadpage"),document.getElementById("content").appendChild(function(){const t=document.createElement("h1");return t.textContent="testing testing 123...",t}()),console.log("calling load page function")})();
