@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(36, 36, 36);
+    margin: 0;
+}
+
+div{
+    background-color: rgb(92, 92, 92);
+}
+
+.restaurantHeader{
+    background-color: brown;
+    display: flex;
+    
+}
+
+.headerButton{
+    background-color: wheat;
+}
