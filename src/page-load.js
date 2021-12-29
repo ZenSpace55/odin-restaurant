@@ -1,5 +1,6 @@
 function createHeader(){
     const exportDiv = document.createElement("div");
+    exportDiv.classList.add("headerButtons");
     exportDiv.textContent = "testing testing 123...";
     exportDiv.classList.add("restaurantHeader");
     const home = document.createElement("button");
