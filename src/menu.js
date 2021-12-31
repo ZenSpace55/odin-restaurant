@@ -2,32 +2,43 @@ function showMenu(){
     const menuDiv = document.createElement("div");
     menuDiv.classList.add("menuPanel");
 
-    const menuHeader = document.createElement("h1");
+    /*const menuHeader = document.createElement("h1");
     menuHeader.textContent = "Our Menu";
-    menuDiv.appendChild(menuHeader);
+    menuDiv.appendChild(menuHeader);*/
 
     const menu = document.createElement("div");
     menu.classList.add("menu");
+
+    const menuHead = document.createElement("div");
+    menuHead.classList.add("menuHeader");
+    menuHead.textContent = "-Lunch Menu-";
+    menuDiv.appendChild(menuHead);
+
+    const menuSubHead = document.createElement("div");
+    menuSubHead.classList.add("menuSubHeader");
+    menuSubHead.textContent = "Served between 10am and 4pm";
+    menuDiv.appendChild(menuSubHead);
+
     const item1 = document.createElement("div");
     item1.classList.add("menuItem");
-    buildMenuItem(item1, "Steak", "30", "A choice cut of beef");
+    buildMenuItem(item1, "Chip Butty", "16", "Our world famous chip butty, go scalloped for $2 extra.");
 
 
     const item2 = document.createElement("div");
     item2.classList.add("menuItem");
-    buildMenuItem(item2, "Fish & Chips", "22", "A fillet of haddock with a generous serving of chips");
+    buildMenuItem(item2, "Fish & Chips", "22", "A fillet of haddock with a generous serving of chips.");
 
     const item3 = document.createElement("div");
     item3.classList.add("menuItem");
-    buildMenuItem(item3, "Cheeseburger", "18", "A premium beef patty served on a sesame seed bun, with swiss cheese, lettuce, tomato, onion, and our secret sauce");
+    buildMenuItem(item3, "Cheeseburger", "18", "A premium beef patty served on a sesame seed bun, with swiss cheese, lettuce, tomato, onion, and our secret sauce.");
 
     const item4 = document.createElement("div");
     item4.classList.add("menuItem");
-    buildMenuItem(item4, "Veggie Burger", "20", "A vegan patty served on a sesame seed bun, with swiss cheese, lettuce, tomato, onion, and our secret sauce");
+    buildMenuItem(item4, "Veggie Burger", "20", "A vegan patty served on a sesame seed bun, with swiss cheese, lettuce, tomato, onion, and our secret sauce.");
 
     const item5 = document.createElement("div");
     item5.classList.add("menuItem");
-    buildMenuItem(item5, "Club Sandwich", "18", "Farm-raised chicken on your choice of bread, with lettuce, tomato, and our special house mayo");
+    buildMenuItem(item5, "Club Sandwich", "18", "Farm-raised chicken on your choice of bread, with lettuce, tomato, and our special house mayo.");
 
     menu.appendChild(item1);
     menu.appendChild(item2);

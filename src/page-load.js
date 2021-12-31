@@ -1,7 +1,7 @@
 function createHeader(){
     const exportDiv = document.createElement("div");
     const headerText = document.createElement("h2");
-    headerText.textContent = "Restaurant Name";
+    headerText.textContent = "The Crooked Cod Tavern";
     exportDiv.appendChild(headerText);
     
     //exportDiv.textContent = "testing testing 123...";

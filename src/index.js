@@ -6,6 +6,7 @@ import "./styles.css";
 
 console.log("hey what's up!??!?");
 
+
 function buildTabSwitching(){
     console.log("trying tab switch");
     const home = document.getElementById("homeButton");
@@ -27,15 +28,24 @@ function switchTab(tab){
     clearContent();
     if (tab === "home"){
         console.log("show " + tab);
+        document.getElementById("homeButton").classList.add("headerTab");
+        document.getElementById("menuButton").classList.remove("headerTab");
+        document.getElementById("contactButton").classList.remove("headerTab");
         loadHome();
     }
 
     else if (tab === "contact"){
         console.log("show " + tab);
+        document.getElementById("homeButton").classList.remove("headerTab");
+        document.getElementById("menuButton").classList.remove("headerTab");
+        document.getElementById("contactButton").classList.add("headerTab");
         loadContact();
     }
     else if (tab === "menu"){
         console.log("show " + tab);
+        document.getElementById("homeButton").classList.remove("headerTab");
+        document.getElementById("contactButton").classList.remove("headerTab");
+        document.getElementById("menuButton").classList.add("headerTab");
         loadMenu();
     }
 }
@@ -49,3 +59,4 @@ function clearContent(){
 
 loadPage();
 buildTabSwitching();
+switchTab("home");
