@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/zenspace55/odin-restaurant/issues"
   },
-  "homepage": "https://github.com/zenspace55/odin-restaurant#readme",
+  "homepage": "https://zenspace55.github.io/odin-restaurant",
   "devDependencies": {
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
